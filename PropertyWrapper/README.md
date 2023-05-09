@@ -114,7 +114,7 @@ print(packages.golfEquipmentWeight)
  ```
  ## propertyWrapper写法
  1. 建立一个类型（enum、struct、class），并标示@propertyWrapper
- 2. 必须有一个名为wrappedValue、至少可以get的属性（存储/计算）
+ 2. 必须有一个名为wrappedValue、至少可以get的属性（存储）
  3. 可以加上projectedValue投射任何属性或是本身
 ```swift
 // example1
