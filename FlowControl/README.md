@@ -9,3 +9,4 @@
 ## Continue
 ## Break
 ## Fallthrough
+## Switch
