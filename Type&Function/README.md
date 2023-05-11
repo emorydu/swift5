@@ -19,5 +19,34 @@ print(fruit.price)
 ```
 ## typealias
 1. 类型别名
+## Function
+1. 为一段code命名，方便重复使用
+2. return后面接返回值，可以具有多个return
+3. 设计时提供的参数名称，可以设定一些使用时才放入值的变量
+```swift
+func min(a: Int, b: Int) -> Int {
+    return a < b ? a : b
+}
+print(min(3, 4))
+
+
+// 引数名称和参数名称
+// 1. 引数名称预设和参数名称一样
+// 2. 可以使用下划线来省略引数名称
+// 3. 只要引数名称、参数类型或回传值任何一个不同，就可以设定同样的变量名
+
+
+// 可变长参数
+func min(of numbers: Int...) -> Int {
+    var min = numbers.first 
+    for number in numbers {
+        min = number < min ? number : min
+    }
+
+    return min
+} 
+min(of: 0)
+min(of: 3, 0, 2, 4)
+```
 
 
